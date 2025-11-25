@@ -1,1 +1,24 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web app</title>
+    <link rel="file" href="TorusNotched-Regular.ttf">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>osu!mania tools</h1>
+    <div id="header">
+    </div>
+    <h2>performance points calculator</h2>
+    <form id="form_thing">
+        <label for="fileSelectPrompt"`>import your beatmap (.osu) file here.</label>
+        <div>
+        </div>
+        <script type="text/javascript" src="performancecalc.js"></script>
+        <input id="file_select" type="file" accept=".osu" value="">
+        <button id="submit" type="button" value="button" onclick="var f = document.getElementById('file_select'); isFileValid(f.getAttribute('allowed'), f.getAttribute('value'))">upload beatmap</button>
+    </form>
+</body>
+</html>

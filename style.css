@@ -1,0 +1,43 @@
+body {
+    background-color: rgb(51, 39, 47);
+}
+
+@font-face {
+    font-family: Torus;
+    src: url('TorusNotched-Regular.ttf');
+}
+
+#header {
+    border-style: solid;
+    border-width: 2px;
+    color: white;
+}
+
+* {
+    color: white; 
+    font-family: Torus
+}
+
+button {
+    background-color: rgb(203, 66, 168);
+    border-style: none;
+    border-radius: 10000px;
+    margin-top: 0em;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+}
+
+button:hover {
+    background-color: rgb(225, 92, 180);
+}
+
+input::file-selector-button {
+    border-radius: 10000px;
+    border-style: none;
+    background-color: rgb(203, 66, 168);
+    color: white;
+    font-family: Torus;
+    width: 150px;
+    height: 30px;
+}
