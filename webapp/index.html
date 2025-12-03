@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web app</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form>
+        <h1>osu!mania tools</h1>
+        <div id="header">
+        </div>
+        <h2>performance points calculator</h2>
+        <label for="file_select"`>import your beatmap (.osu) file here.</label>
+        <div>
+        </div>
+        <input id="file_select" type="file" accept=".osu" value="">
+        <script type="text/javascript" src="js/BeatmapFile.js">
+            
+        </script>
+        <button type="button" value="button" onclick="
+            var fInput = document.getElementById('file_select');
+            let beatmap = new Beatmap(fInput.value)
+            beatmap.isFileValid()
+
+        ">upload beatmap</button>
+    </form>
+</body>
+</html>
